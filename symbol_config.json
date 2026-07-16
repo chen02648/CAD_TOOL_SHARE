@@ -1,0 +1,831 @@
+{
+  "base_rect": {
+    "type": "rectangle",
+    "width_cm": 0.8,
+    "height_cm": 0.2,
+    "line": {
+      "visible": true,
+      "color": "black",
+      "weight": 0.25
+    },
+    "fill": {
+      "visible": false,
+      "color": "white"
+    }
+  },
+
+  "symbols": [
+    {
+      "id": "square_01",
+      "name": "正方形",
+      "category": "basic",
+      "desc": "边长 0.2 cm",
+      "type": "rectangle",
+      "size_cm": 0.2,
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false,
+        "color": "white"
+      }
+    },
+    {
+      "id": "5star",
+      "name": "五角星",
+      "category": "basic",
+      "type": "5star",
+      "size_cm": 0.2,
+      "adjustments": [0.18],
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false
+      }
+    },
+    {
+      "id": "6star",
+      "name": "六角星",
+      "category": "basic",
+      "type": "6star",
+      "size_cm": 0.2,
+      "adjustments": [0.18],
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false
+      }
+    },
+    {
+      "id": "circle_01",
+      "name": "圆形",
+      "category": "basic",
+      "desc": "直径 0.2 cm",
+      "type": "oval",
+      "diameter_cm": 0.2,
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false,
+        "color": "white"
+      }
+    },
+    {
+      "id": "circle_fill_01",
+      "name": "实心圆",
+      "category": "basic",
+      "desc": "直径 0.2 cm，黑色填充",
+      "type": "oval",
+      "diameter_cm": 0.2,
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": true,
+        "color": "black"
+      }
+    },
+    {
+      "id": "tri_eq_01",
+      "name": "等边三角形",
+      "category": "basic",
+      "desc": "边长 0.2 cm",
+      "type": "triangle_equilateral",
+      "side_cm": 0.2,
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false,
+        "color": "white"
+      }
+    },
+    {
+  "id": "tri_eq_fill_01",
+  "name": "实心等边三角形【黑】",
+  "category": "basic",
+  "desc": "边长 0.2 cm，黑色填充",
+  "type": "triangle_equilateral",
+  "side_cm": 0.2,
+  "line": {
+    "visible": true,
+    "color": "black",
+    "weight": 0.25
+  },
+  "fill": {
+    "visible": true,
+    "color": "black"
+  }
+},
+    {
+      "id": "tri_right_01",
+      "name": "等腰直角三角形",
+      "category": "basic",
+      "shape": {
+        "type": "right_triangle",
+        "leg_cm": 0.2
+      },
+      "style": {
+        "line": { "visible": true, "color": [0, 0, 0], "weight": 0.25 },
+        "fill": { "visible": false }
+      }
+    },
+    {
+      "id": "text_S",
+      "name": "文字S",
+      "category": "text",
+      "content": "S",
+      "width_cm": 0.18,
+      "height_cm": 0.18,
+      "font_size": 7,
+      "bold": false,
+      "line": {
+        "visible": false
+      },
+      "fill": {
+        "visible": false
+      }
+    },
+    {
+      "id": "text_hash",
+      "name": "文字#",
+      "category": "text",
+      "content": "#",
+      "width_cm": 0.18,
+      "height_cm": 0.18,
+      "font_size": 10,
+      "bold": false,
+      "line": {
+        "visible": false
+      },
+      "fill": {
+        "visible": false
+      }
+    },
+    {
+      "id": "text_T",
+      "name": "文字T",
+      "category": "text",
+      "content": "T",
+      "width_cm": 0.18,
+      "height_cm": 0.18,
+      "font_size": 7,
+      "bold": false,
+      "line": {
+        "visible": false
+      },
+      "fill": {
+        "visible": false
+      }
+    },
+    {
+      "id": "chevron_left_01",
+      "name": "小于号",
+      "category": "basic",
+      "type": "chevron",
+      "width_cm": 0.2,
+      "height_cm": 0.18,
+      "rotation": 180,
+      "adjustments": [1.1],
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false,
+        "color": "white"
+      }
+    },
+    {
+      "id": "chevron_right_01",
+      "name": "大于号",
+      "category": "basic",
+      "type": "chevron",
+      "width_cm": 0.2,
+      "height_cm": 0.18,
+      "rotation": 0,
+      "adjustments": [1.1],
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false,
+        "color": "white"
+      }
+    },
+    {
+      "id": "diamond_01",
+      "name": "菱形",
+      "category": "basic",
+      "type": "diamond",
+      "size_cm": 0.2,
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.25
+      },
+      "fill": {
+        "visible": false
+      }
+    },
+    {
+      "id": "cross_01",
+      "name": "叉叉【黑】",
+      "category": "basic",
+      "type": "cross",
+      "size_cm": 0.23,
+      "adjustments": [0.0],
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.1
+      },
+      "fill": {
+        "visible": true,
+        "color": "black"
+      }
+    },
+    {
+      "id": "cross_outline_01",
+      "name": "空心叉叉【黑边白底】",
+      "category": "basic",
+      "type": "cross",
+      "size_cm": 0.3,
+      "adjustments": [0.2],
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.1
+      },
+      "fill": {
+        "visible": false,
+        "color": "white"
+      },
+      "offset":{ "x": 0, "y": -0.05 }
+    },
+    {
+    "id": "plus_01",
+    "name": "加号【黑】",
+    "category": "basic",
+    "type": "plus",
+    "size_cm": 0.23,
+    "adjustments": [0.0],
+    "line": {
+      "visible": true,
+      "color": "black",
+      "weight": 0.1
+    },
+    "fill": {
+      "visible": true,
+      "color": "black"
+    }
+  },
+  {
+    "id": "plus_outline_01",
+    "name": "空心加号【黑边白底】",
+    "category": "basic",
+    "type": "plus",
+    "size_cm": 0.3,
+    "adjustments": [0.2],
+    "line": {
+      "visible": true,
+      "color": "black",
+      "weight": 0.1
+    },
+    "fill": {
+      "visible": false,
+      "color": "white"
+    }
+  },
+  {
+    "id": "cross_plus_01",
+    "name": "加号叉叉【黑】",
+    "category": "composite",
+    "meta": {
+      "size_hint": {
+        "width_cm": 0.23,
+        "height_cm": 0.23
+      }
+    },
+    "children": [
+      {
+        "shape": {
+          "category": "basic",
+          "type": "cross",
+          "size_cm": 0.23,
+          "adjustments": [0.0],
+          "line": {
+            "visible": true,
+            "color": "black",
+            "weight": 0.1
+          },
+          "fill": {
+            "visible": true,
+            "color": "black"
+          }
+        },
+        "offset": { "x": 0, "y": 0 }
+      },
+      {
+        "shape": {
+          "category": "basic",
+          "type": "plus",
+          "size_cm": 0.23,
+          "adjustments": [0.0],
+          "line": {
+            "visible": true,
+            "color": "black",
+            "weight": 0.1
+          },
+          "fill": {
+            "visible": true,
+            "color": "black"
+          }
+        },
+        "offset": { "x": 0, "y": 0 }
+      }
+    ]
+  },
+  {
+    "id": "circle_plus_01",
+    "name": "圆圈十字",
+    "category": "composite",
+    "meta": {
+      "size_hint": {
+        "width_cm": 0.22,
+        "height_cm": 0.22
+      }
+    },
+    "children": [
+      {
+        "shape": {
+          "category": "basic",
+          "type": "oval",
+          "diameter_cm": 0.22,
+          "line": {
+            "visible": true,
+            "color": "black",
+            "weight": 0.25
+          },
+          "fill": {
+            "visible": false,
+            "color": "white"
+          }
+        },
+        "offset": { "x": 0, "y": 0 }
+      },
+      {
+        "shape": {
+          "category": "basic",
+          "type": "plus",
+          "size_cm": 0.22,
+          "adjustments": [0.0],
+          "line": {
+            "visible": true,
+            "color": "black",
+            "weight": 0.1
+          },
+          "fill": {
+            "visible": true,
+            "color": "black"
+          }
+        },
+        "offset": { "x": 0, "y": 0 }
+      }
+    ]
+  },
+    {
+      "id": "circle_cross_01",
+      "name": "圆圈叉",
+      "category": "basic",
+      "type": "circle_cross",
+      "size_cm": 0.2,
+      "line": {
+        "visible": true,
+        "color": "black",
+        "weight": 0.1
+      },
+      "fill": {
+        "visible": false
+      }
+    },
+    {
+      "id": "circle_double_01",
+      "name": "同心圆",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.2,
+          "height_cm": 0.2
+        }
+      },
+      "children": [
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.2,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.1,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        }
+      ]
+    },
+        {
+      "id": "circle_double_02",
+      "name": "同心圆【红】",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.2,
+          "height_cm": 0.2
+        }
+      },
+      "children": [
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.2,
+            "line": {
+              "visible": true,
+              "color": [255, 0, 0],
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.1,
+            "line": {
+              "visible": true,
+              "color": [255, 0, 0],
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        }
+      ]
+    },
+    {
+      "id": "circle_double_fill_01",
+      "name": "同心圆（内实心）",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.2,
+          "height_cm": 0.2
+        }
+      },
+      "children": [
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.2,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.1,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": true,
+              "color": "black"
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        }
+      ]
+    },
+    {
+      "id": "circle_bar_01",
+      "name": "圆中横线",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.2,
+          "height_cm": 0.2
+        }
+      },
+      "children": [
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.2,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.22,
+            "height_cm": 0.03,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": true,
+              "color": "black"
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        }
+      ]
+    },
+    {
+      "id": "circle_bar_red",
+      "name": "红圆中横线",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.2,
+          "height_cm": 0.2
+        }
+      },
+      "children": [
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.2,
+            "line": {
+              "visible": true,
+              "color": [255, 0, 0],
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.22,
+            "height_cm": 0.01,
+            "line": {
+              "visible": false
+            },
+            "fill": {
+              "visible": true,
+              "color": [255, 0, 0]
+            }
+          },
+          "offset": { "x": 0, "y": 0 }
+        }
+      ]
+    },
+    {
+      "id": "circle_bar_pi_red",
+      "name": "圆中横线+Π【红】",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.24,
+          "height_cm": 0.17
+        }
+      },
+      "children": [
+        {
+          "ref": "circle_bar_red",
+          "offset": { "x": 0, "y": 0.00 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.10,
+            "height_cm": 0.01,
+            "line": {
+              "visible": false
+            },
+            "fill": {
+              "visible": true,
+              "color": [255, 0, 0]
+            }
+          },
+          "offset": { "x": 0, "y": -0.04 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.01,
+            "height_cm": 0.1,
+            "line": {
+              "visible": false
+            },
+            "fill": {
+              "visible": true,
+              "color": [255, 0, 0]
+            }
+          },
+          "offset": { "x": -0.035, "y": 0.005 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.01,
+            "height_cm": 0.1,
+            "line": {
+              "visible": false
+            },
+            "fill": {
+              "visible": true,
+              "color": [255, 0, 0]
+            }
+          },
+          "offset": { "x": 0.035, "y": 0.005 }
+        }
+      ]
+    },
+    {
+      "id": "bar_u_red",
+      "name": "横线+U【红】",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.26,
+          "height_cm": 0.20
+        }
+      },
+      "children": [
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.18,
+            "height_cm": 0.015,
+            "line": { "visible": false },
+            "fill": { "visible": true, "color": [255, 0, 0] }
+          },
+          "offset": { "x": 0, "y": -0.010 }
+        },
+
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.015,
+            "height_cm": 0.15,
+            "line": { "visible": false },
+            "fill": { "visible": true, "color": [255, 0, 0] }
+          },
+          "offset": { "x": -0.045, "y": 0.015 }
+        },
+
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.015,
+            "height_cm": 0.15,
+            "line": { "visible": false },
+            "fill": { "visible": true, "color": [255, 0, 0] }
+          },
+          "offset": { "x": 0.045, "y": 0.015 }
+        },
+
+        {
+          "shape": {
+            "category": "basic",
+            "type": "rectangle",
+            "width_cm": 0.10,
+            "height_cm": 0.015,
+            "line": { "visible": false },
+            "fill": { "visible": true, "color": [255, 0, 0] }
+          },
+          "offset": { "x": 0, "y": 0.085 }
+        }
+      ]
+    },
+    {
+      "id": "circle_triangle_01",
+      "name": "圆+三角",
+      "category": "composite",
+      "meta": {
+        "size_hint": {
+          "width_cm": 0.231,
+          "height_cm": 0.231
+        }
+      },
+      "children": [
+        {
+          "shape": {
+            "category": "basic",
+            "type": "oval",
+            "diameter_cm": 0.231,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false,
+              "color": "white"
+            }
+          },
+          "offset": { "x": 0.0, "y": 0.0 }
+        },
+        {
+          "shape": {
+            "category": "basic",
+            "type": "triangle_equilateral",
+            "side_cm": 0.2,
+            "line": {
+              "visible": true,
+              "color": "black",
+              "weight": 0.25
+            },
+            "fill": {
+              "visible": false,
+              "color": "white"
+            }
+          },
+          "offset": { "x": 0.0, "y": -0.029  }
+        }
+      ]
+    }
+  ]
+}
